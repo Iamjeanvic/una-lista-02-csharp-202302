@@ -1,0 +1,18 @@
+double Salario_fixo, valor_vendas, percentual, Salario_total, porcentagem;
+
+Console.WriteLine("Digite o salário fixo: ");
+Salario_fixo = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Digite o valor total das vendas realiadas no mês: ");
+valor_vendas  = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Digite o percentual recebido sobre o total de vendas: ");
+percentual = Convert.ToDouble(Console.ReadLine());
+
+porcentagem = percentual / 100;
+
+Salario_total = (valor_vendas * porcentagem) + Salario_fixo;
+
+Console.WriteLine("O salário total a ser recebido é de R$" + Salario_total.ToString("F2"));
+Console.ReadLine();
+
