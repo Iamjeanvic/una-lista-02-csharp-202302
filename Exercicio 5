@@ -1,0 +1,20 @@
+double horas_trabalhadas, Valor_recebido, salario_familia, salario_bruto;
+int numero_filhos;
+
+
+Console.WriteLine("Digite o numero de horas trabalhadas no mês: ");
+horas_trabalhadas = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Digite o valor recebido por horas de trabalho: ");
+Valor_recebido = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Qual o valor do salário familia: ");
+salario_familia = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Digite a quantidade de filhos menor que 14 anos: ");
+numero_filhos = Convert.ToInt32(Console.ReadLine());
+
+salario_bruto = horas_trabalhadas * Valor_recebido + salario_familia * numero_filhos;
+
+Console.WriteLine("O salário bruto a ser recebido é: " + salario_bruto.ToString("F2"));
+Console.ReadLine();
