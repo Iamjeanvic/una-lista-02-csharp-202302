@@ -1,0 +1,19 @@
+Double valor_um, valor_dois, valor_tres, aritmetica, harmonica, geometrica;
+
+Console.WriteLine("Digite o primeiro valor: ");
+valor_um = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Digite o segundo valor: ");
+valor_dois = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Digite o terceiro valor: ");
+valor_tres = Convert.ToDouble(Console.ReadLine());
+
+aritmetica = (valor_um + valor_dois + valor_tres) / 3;
+harmonica = 3/ ((1/valor_um) + (1/valor_dois) + (1/valor_tres));
+geometrica = Math.Pow(valor_um * valor_dois * valor_tres, 1.0 / 3.0);
+
+Console.WriteLine("A média aritmética dos números é: " + aritmetica);
+Console.WriteLine("A média harmônica dos números é: " + harmonica);
+Console.WriteLine("A média geométrica dos números é " + geometrica);
+Console.ReadLine();
