@@ -1,0 +1,13 @@
+double num1, num2, resp;
+
+Console.WriteLine("Digite um número: ");
+num1 = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Digite outro número: ");
+num2 = Convert.ToDouble(Console.ReadLine());
+
+resp = Math.Log(num1,num2);
+
+Console.WriteLine($"O Logaritmo do {num1} na base {num2} é {resp:F4}");
+
+Console.ReadLine();
