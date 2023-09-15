@@ -1,0 +1,10 @@
+double num, num1, med;
+
+
+Console.WriteLine("Digite um Número: ");
+num = Convert.ToDouble (Console.ReadLine());
+Console.WriteLine("Digite outro Número: ");
+num1 = Convert.ToDouble (Console.ReadLine());
+med = (num + num1) / 2;
+Console.WriteLine("A média aritmética dos números informados é: " + med);
+Console.ReadLine();
